@@ -1,0 +1,9 @@
+[package]
+name = "graphmovielog"
+version = "0.1.0"
+authors = ["kyleheadley <kyle.headley@colorado.edu>"]
+description = "Logging framework from Rust to Graphmovie"
+readme = "README.md"
+license = "MPL-2.0"
+
+[dependencies]
