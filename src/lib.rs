@@ -10,10 +10,10 @@ extern crate time;
 pub const DEFAULT_STYLE: &'static str = "active";
 
 pub trait GMLog {
-  fn snapshot(self: &Self, file: &mut File, msg: Option<&str>) {
+  fn log_snapshot(self: &Self, file: &mut File, msg: Option<&str>) {
     startframe(file, &format!("Logged at {}", time::now().asctime()), msg);
   }
-  fn comment(self: &Self, file: &mut File, msg: Option<&str>) {
+  fn log_comment(self: &Self, file: &mut File, msg: Option<&str>) {
     makecomment(file, &format!("Commented at {}", time::now().asctime()), msg);
   }
 }
