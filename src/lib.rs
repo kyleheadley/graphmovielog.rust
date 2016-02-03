@@ -104,7 +104,7 @@ fn it_works() {
   impl GMLog for String {};
   let l: String = String::from("a logger");
 
-  l.snapshot(f, Some("first snap"));
-  l.snapshot(f, None);
-  l.comment(f, Some("some words"));
+  l.log_snapshot(f, Some("first snap"));
+  l.log_snapshot(f, None);
+  l.log_comment(f, Some("some words"));
 }
